@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo:*)",
+      "Bash(which gh:*)",
+      "Bash(winget install:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
