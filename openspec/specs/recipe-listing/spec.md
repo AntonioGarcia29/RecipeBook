@@ -22,7 +22,7 @@ El sistema SHALL mostrar las recetas que satisfacen los criterios de búsqueda y
 - **THEN** el sistema muestra únicamente las cards de recetas que satisfacen dichos criterios
 
 ### Requirement: Card de receta con información esencial
-Cada card de receta SHALL mostrar imagen, nombre, categoría, dificultad y tiempo de preparación.
+Cada card de receta SHALL mostrar imagen, nombre, categoría, dificultad y tiempo de preparación, y SHALL ser navegable a la página de detalle de la receta.
 
 #### Scenario: Card con todos los campos
 - **WHEN** se renderiza una card de receta con todos los campos completos
@@ -31,6 +31,10 @@ Cada card de receta SHALL mostrar imagen, nombre, categoría, dificultad y tiemp
 #### Scenario: Card con imagen fallida
 - **WHEN** la imagen de la receta no carga
 - **THEN** la card muestra un placeholder o imagen de fallback sin romper el layout
+
+#### Scenario: Clic en una card
+- **WHEN** el usuario hace clic en cualquier parte de la card de una receta
+- **THEN** el sistema navega a `/recipes/:id` con el id de esa receta
 
 ### Requirement: Navegación a la página de recetas
 El sistema SHALL redirigir la ruta raíz `/` a `/recipes`.

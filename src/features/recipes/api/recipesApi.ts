@@ -12,6 +12,10 @@ export const recipesApi = createApi({
       query: () => "/recipes",
       providesTags: ["Recipes"],
     }),
+    getRecipeById: builder.query<Recipe, number>({
+      query: (id) => `/recipes/${id}`,
+      providesTags: ["Recipes"],
+    }),
     getCategories: builder.query<Category[], void>({
       query: () => "/categories",
       providesTags: ["Categories"],
@@ -19,4 +23,4 @@ export const recipesApi = createApi({
   }),
 });
 
-export const { useGetRecipesQuery, useGetCategoriesQuery } = recipesApi;
+export const { useGetRecipesQuery, useGetRecipeByIdQuery, useGetCategoriesQuery } = recipesApi;
