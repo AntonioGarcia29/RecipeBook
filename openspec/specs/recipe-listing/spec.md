@@ -1,5 +1,5 @@
 ### Requirement: Mostrar listado de recetas
-El sistema SHALL mostrar todas las recetas disponibles obtenidas del endpoint `GET /recipes` en formato de grid de cards.
+El sistema SHALL mostrar las recetas que satisfacen los criterios de búsqueda y filtro activos obtenidas del endpoint `GET /recipes` en formato de grid de cards.
 
 #### Scenario: Listado cargado correctamente
 - **WHEN** el usuario navega a `/recipes`
@@ -16,6 +16,10 @@ El sistema SHALL mostrar todas las recetas disponibles obtenidas del endpoint `G
 #### Scenario: Sin recetas disponibles
 - **WHEN** la API retorna un array vacío
 - **THEN** el sistema muestra un mensaje indicando que no hay recetas disponibles
+
+#### Scenario: Listado filtrado
+- **WHEN** el usuario aplica criterios de búsqueda o filtro activos
+- **THEN** el sistema muestra únicamente las cards de recetas que satisfacen dichos criterios
 
 ### Requirement: Card de receta con información esencial
 Cada card de receta SHALL mostrar imagen, nombre, categoría, dificultad y tiempo de preparación.

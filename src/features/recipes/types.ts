@@ -2,6 +2,11 @@ export type Difficulty = "Fácil" | "Media" | "Difícil";
 
 export type RecipeCategory = "Desayuno" | "Plato Fuerte" | "Postre" | "Snack";
 
+export interface Category {
+  id: number;
+  name: string;
+}
+
 export interface Recipe {
   id: number;
   name: string;
