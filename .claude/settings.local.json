@@ -6,7 +6,17 @@
       "Bash(winget install:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(openspec new:*)",
+      "Bash(openspec status:*)",
+      "Bash(openspec instructions:*)",
+      "Bash(cd C:/PersonalProyects/RecipeBook && npm install react-router-dom 2>&1)",
+      "Bash(cd C:/PersonalProyects/RecipeBook && npm install react-router-dom --legacy-peer-deps 2>&1)",
+      "Bash(cd C:/PersonalProyects/RecipeBook && npx tsc --noEmit 2>&1)",
+      "Bash(cp -r C:/PersonalProyects/RecipeBook/openspec/changes/add-recipe-listing C:/PersonalProyects/RecipeBook/openspec/changes/archive/2026-03-13-add-recipe-listing && rm -rf C:/PersonalProyects/RecipeBook/openspec/changes/add-recipe-listing && echo \"OK\")",
+      "Bash(cp -r C:/PersonalProyects/RecipeBook/openspec/changes/add-search-and-filter C:/PersonalProyects/RecipeBook/openspec/changes/archive/2026-03-13-add-search-and-filter && rm -rf C:/PersonalProyects/RecipeBook/openspec/changes/add-search-and-filter && echo \"OK\")",
+      "Bash(openspec list:*)",
+      "Bash(cp -r \"C:/PersonalProyects/RecipeBook/openspec/changes/add-recipe-detail-page\" \"C:/PersonalProyects/RecipeBook/openspec/changes/archive/2026-03-13-add-recipe-detail-page\" && rm -rf \"C:/PersonalProyects/RecipeBook/openspec/changes/add-recipe-detail-page\" 2>&1)"
     ]
   }
 }
