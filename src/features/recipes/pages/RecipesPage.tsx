@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { useGetRecipesQuery, useGetCategoriesQuery } from "../api/recipesApi";
 import { RecipeCard } from "../components/RecipeCard";
 import { RecipeFilters } from "../components/RecipeFilters";
@@ -38,7 +39,15 @@ export function RecipesPage() {
   if (!recipes || recipes.length === 0) {
     return (
       <main className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Recetas</h1>
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-3xl font-bold text-gray-900">Recetas</h1>
+          <Link
+            to="/recipes/new"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm"
+          >
+            + Agregar receta
+          </Link>
+        </div>
         <p className="text-gray-500 text-center py-16">
           No hay recetas disponibles.
         </p>
@@ -48,7 +57,15 @@ export function RecipesPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Recetas</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-3xl font-bold text-gray-900">Recetas</h1>
+        <Link
+          to="/recipes/new"
+          className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm"
+        >
+          + Agregar receta
+        </Link>
+      </div>
 
       <RecipeFilters
         searchText={searchText}

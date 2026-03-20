@@ -20,7 +20,20 @@ export const recipesApi = createApi({
       query: () => "/categories",
       providesTags: ["Categories"],
     }),
+    createRecipe: builder.mutation<Recipe, Omit<Recipe, "id">>({
+      query: (body) => ({
+        url: "/recipes",
+        method: "POST",
+        body,
+      }),
+      invalidatesTags: ["Recipes"],
+    }),
   }),
 });
 
-export const { useGetRecipesQuery, useGetRecipeByIdQuery, useGetCategoriesQuery } = recipesApi;
+export const {
+  useGetRecipesQuery,
+  useGetRecipeByIdQuery,
+  useGetCategoriesQuery,
+  useCreateRecipeMutation,
+} = recipesApi;
