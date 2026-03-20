@@ -261,12 +261,65 @@
       "difficulty": "Fácil",
       "prepTime": 20,
       "imageUrl": "https://placehold.co/400x300?text=Huevos+Rancheros"
+    },
+    {
+      "name": "Tacos de Canasta",
+      "description": "Tacos rellenos de guisado servidos en canasta, típicos de la Ciudad de México. Suaves, jugosos y perfectos para llevar.",
+      "ingredients": [
+        "12 tortillas de maíz",
+        "500g carne de cerdo o res guisada",
+        "1 cebolla picada",
+        "2 dientes de ajo",
+        "2 chiles morrones",
+        "Sal y pimienta al gusto",
+        "Aceite para freír"
+      ],
+      "steps": [
+        "Cocinar"
+      ],
+      "category": "Plato Fuerte",
+      "difficulty": "Media",
+      "prepTime": 30,
+      "imageUrl": "https://placehold.co/400x300?text=Tacos+de+Canasta",
+      "id": 11
+    },
+    {
+      "name": "Tacos de Canasta Poblanos",
+      "description": "Tacos de canasta estilo Poblano, rellenos de guisados tradicionales como rajas, papas y frijoles.",
+      "ingredients": [
+        "12 tortillas de maíz",
+        "300g papas con rajas guisadas",
+        "200g frijoles refritos",
+        "1 cebolla en rodajas",
+        "Chile chipotle al gusto",
+        "Sal al gusto"
+      ],
+      "steps": [
+        "Cocinar"
+      ],
+      "category": "Plato Fuerte",
+      "difficulty": "Media",
+      "prepTime": 30,
+      "imageUrl": "https://www.cocinavital.mx/wp-content/uploads/2024/07/tacos-de-canasta-634x420.jpg",
+      "id": 12
     }
   ],
   "categories": [
-    { "id": 1, "name": "Desayuno" },
-    { "id": 2, "name": "Plato Fuerte" },
-    { "id": 3, "name": "Postre" },
-    { "id": 4, "name": "Snack" }
+    {
+      "id": 1,
+      "name": "Desayuno"
+    },
+    {
+      "id": 2,
+      "name": "Plato Fuerte"
+    },
+    {
+      "id": 3,
+      "name": "Postre"
+    },
+    {
+      "id": 4,
+      "name": "Snack"
+    }
   ]
 }
